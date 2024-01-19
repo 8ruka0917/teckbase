@@ -17,14 +17,10 @@
 </html>
 
 <?php
-    // ・データベース名：tb250595db
-    // ・ユーザー名：tb-250595
-    // ・パスワード：Z4VTHbzN9S
-    
     //DB接続設定
-    $dsn = 'mysql:dbname=tb250595db;host=localhost';  //dsnの右辺の中にスペースを入れてはいけない
-    $user = 'tb-250595';
-    $password = 'Z4VTHbzN9S';
+    $dsn = 'mysql:dbname=データベース名;host=localhost';  //dsnの右辺の中にスペースを入れてはいけない
+    $user = 'ユーザー名';
+    $password = 'パスワード';
     $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
     
     $sql = "CREATE TABLE IF NOT EXISTS content"  // IF NOT EXISTS tbtest:もしまだこのテーブルが存在しないなら
